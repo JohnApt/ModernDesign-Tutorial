@@ -49,12 +49,13 @@
 							 Style="{StaticResource MenuButtonTheme}" />
 			</StackPanel>
 
-			<TextBlock Width="250"
-					   Height="40"
-					   VerticalAlignment="Center"
-					   HorizontalAlignment="Left"
-					   Margin="5"
-					   Grid.Column="1" />
+			<TextBox Width="250"
+					 Height="40"
+					 VerticalAlignment="Center"
+					 HorizontalAlignment="Left"
+					 Margin="5"
+					 Grid.Column="1"
+					 Style="{StaticResource TextBoxTheme}" />
 		</Grid>
 
 	</Border>
