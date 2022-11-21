@@ -83,7 +83,8 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="MVVM\View Model\MainViewModel.cs" />
+    <Compile Include="MVVM\ViewModel\HomeViewModel.cs" />
+    <Compile Include="MVVM\ViewModel\MainViewModel.cs" />
     <Compile Include="MVVM\View\HomeView.xaml.cs">
       <DependentUpon>HomeView.xaml</DependentUpon>
     </Compile>
@@ -114,8 +115,10 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Fonts\" />
-    <Folder Include="Images\" />
     <Folder Include="MVVM\Model\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Crystallid.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

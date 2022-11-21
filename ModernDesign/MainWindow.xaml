@@ -37,12 +37,12 @@
 							 Foreground="White"
 							 FontSize="24"
 							 Style="{StaticResource MenuButtonTheme}" />
-				<RadioButton Content="Not Home"
+				<RadioButton Content="Discover"
 							 Height="50"
 							 Foreground="White"
 							 FontSize="24"
 							 Style="{StaticResource MenuButtonTheme}" />
-				<RadioButton Content="Not Home2"
+				<RadioButton Content="TBD"
 							 Height="50"
 							 Foreground="White"
 							 FontSize="24"

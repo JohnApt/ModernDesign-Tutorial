@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ModernDesign.MVVM.View_Model
+namespace ModernDesign.MVVM.ViewModel
 {
 	class MainViewModel : ObservableObject
 	{
