@@ -4,6 +4,7 @@
 		xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
 		xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
 		xmlns:local="clr-namespace:ModernDesign"
+		xmlns:viewModel="clr-namespace:ModernDesign.MVVM.ViewModel"
 		mc:Ignorable="d"
 		Height="600"
 		Width="920"
@@ -11,6 +12,10 @@
 		ResizeMode="NoResize"
 		Background="Transparent"
 		AllowsTransparency="True">
+
+	<Window.DataContext>
+		<viewModel:MainViewModel />
+	</Window.DataContext>
 	<Border Background="#252540"
 			CornerRadius="20">
 		<Grid>
@@ -36,12 +41,15 @@
 							 Height="50"
 							 Foreground="White"
 							 FontSize="24"
-							 Style="{StaticResource MenuButtonTheme}" />
+							 Style="{StaticResource MenuButtonTheme}"
+							 IsChecked="True"
+							 Command="{Binding HomeViewCommand}"/>
 				<RadioButton Content="Discover"
 							 Height="50"
 							 Foreground="White"
 							 FontSize="24"
-							 Style="{StaticResource MenuButtonTheme}" />
+							 Style="{StaticResource MenuButtonTheme}"
+							 Command="{Binding DiscoverViewCommand}"/>
 				<RadioButton Content="TBD"
 							 Height="50"
 							 Foreground="White"
@@ -59,7 +67,8 @@
 
 			<ContentControl Grid.Row="1"
 							Grid.Column="1"
-							Margin="10" />
+							Margin="10"
+							Content="{Binding currentView}"/>
 		</Grid>
 
 	</Border>
